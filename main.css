@@ -14,5 +14,19 @@
 @import url('https://raw.githubusercontent.com/DevBubba/Slick/main/Lib/Theme.css');
 
 :root {
-    
+  --font-primary: 'Rajdhani';
+  --app-background: url("https://i.imgur.com/zvJB4Ab.jpg");
+  --main-color: #992727;
+  --main-color-selected: #aa2f2f;
+  --main-color-semitransparent: #d4393926; 
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #fd9fa0;
+  --accent-color-semitransparent: #fca7a918;
+  --accent-saturated: #fd7a7c;
+  --accent-desaturated: #b47a7a;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://i.imgur.com/IJjO0c5.png");
+  --profile-activity: #6d1515; 
+  --scroll-thumb-color: #a54b4b; 
 }
