@@ -29,19 +29,20 @@ Version | 2.0
 @import url('https://raw.githubusercontent.com/DevBubba/Slick/main/Lib/Theme.css');
 
 :root {
-  --font-primary: 'PermanentMarker';
+  --font-primary: 'Rajdhani'; /* All Text Font [Default: #992727] */
+  --app-background: url("https://i.imgur.com/dLO5zNM.jpg"); /* Background Image [Default: ("https://i.imgur.com/dLO5zNM.jpg")] */
+  --main-color: #992727; /* Main Color (Mostly Used In Buttons) [Default: #992727] */
+  --main-color-selected: #aa2f2f; /* [Default: #aa2f2f] */
+  --main-color-semitransparent: #d4393926; /* [Default: #d4393926] */
+  --main-color-semitransparent-selected: #d336364d; /* [Default: #d336364d] */
+  --accent-color: #fd9fa0; /* Accent Color (Used In Links, Mentions etc) [Default: #fd9fa0] */
+  --accent-color-semitransparent: #fca7a918; /* [Default: #fca7a918] */
+  --accent-saturated: #fd7a7c; /* [Default: #fd7a7c] */
+  --accent-desaturated: #b47a7a; /* [Default: #b47a7a] */
+  --button-text: #dddddd; /* [Default: #dddddd] */
+  --button-text-selected: #ffffff; /* [Default: #ffffff] */
+  --profile-background: url("https://i.imgur.com/0zPtqeA.jpg"); /* Profile Background [Default: ("https://i.imgur.com/0zPtqeA.jpg")] */
+  --profile-activity: #6d1515; /* Activity Field Color (In Profiles) [Default: #6d1515] */
+  --scroll-thumb-color: #a54b4b; /* Scrollbar Color [Default: #a54b4b] */
   --app-background: url("https://i.imgur.com/dLO5zNM.jpg");
-  --main-color: #992727;
-  --main-color-selected: #aa2f2f;
-  --main-color-semitransparent: #d4393926;
-  --main-color-semitransparent-selected: #d336364d;
-  --accent-color: #fd9fa0;
-  --accent-color-semitransparent: #fca7a918;
-  --accent-saturated: #fd7a7c;
-  --accent-desaturated: #b47a7a;
-  --button-text: #dddddd;
-  --button-text-selected: #ffffff;
-  --profile-background: url("https://i.imgur.com/0zPtqeA.jpg");
-  --profile-activity: #6d1515;
-  --scroll-thumb-color: #a54b4b;
 }
