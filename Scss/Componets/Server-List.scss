@@ -1,0 +1,84 @@
+@use "../Core/Mixins" as m;
+
+[class^="scroller-"] {
+  background: transparent !important;
+}
+
+[class*="wrapper"][class*="guilds"] {
+  [class*="listItemWrapper"] > a {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--accent-saturated);
+    color: var(--accent-saturated);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  [class*="folder"],
+  [class*="closedFolderIconWrapper"],
+  [class*="expandedFolderBackground"] {
+    background: transparent !important;
+  }
+  [class*="folderIconWrapper"],
+  [class*="expandedFolderBackground"]:not([class*="collapsed"]) {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 20px;
+  }
+
+  [class*="circleIconButton"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: var(--accent-saturated);
+  }
+
+  #bd-pub-button,
+  foreignObject > [class^="wrapper"] > [class*="childWrapper"],
+  foreignObject > [class^="wrapper"] > img {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  foreignObject > [class^="wrapper"][class*="selected"] > [class*="childWrapper"] {
+    background-color: var(--main-color) !important;
+  }
+
+  [class*="iconBadge"] {
+    background: var(--main-color) !important;
+  }
+
+  [class*="numberBadge"] {
+    background: var(--main-color) !important;
+  }
+}
+
+[class^="unreadMentionsIndicator"] > [class*="bar"] {
+  background: var(--main-color);
+}
+
+[class*="colorPickerCustom"] {
+  background: rgba(0, 0, 0, 1) !important;
+  border-color: transparent;
+}
+
+button[style="background-color: rgb(88, 101, 242);"] {
+  background: var(--accent-color) !important;
+}
+
+svg[style="color: rgb(88, 101, 242);"] path {
+  fill: var(--accent-color);
+}
+
+[class*="header"] h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+[class*="footer"] h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+[class*="footerButton"] {
+  @include m.btred_important;
+}
+
+[class^="listItem"] > [class^="wrapper"] {
+  & > [class*="target"]::before,
+  & > [class*="centerTarget"]::before {
+    background: var(--accent-color);
+  }
+}
