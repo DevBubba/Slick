@@ -154,7 +154,7 @@
   --accent-desaturated: #b47a7a;
   --button-text: #dddddd;
   --button-text-selected: #ffffff;
-  --profile-background: url("https://github.com/DevBubba/Assets/Img/ProfileBackground.png");
+  --profile-background: url("https://raw.githubusercontent.com/DevBubba/Slick/main/Assets/Img/ProfileBackground.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
 }
@@ -2411,6 +2411,6 @@ div[class^=notice] button:hover {
   height: 24px;
   margin-top: -5px;
   margin-left: 6px;
-  background: url(https://raw.githubusercontent.com/DevBubba/Slick/main/Assets/Icons/Logo.png) center/cover no-repeat;
+  background: url(https://raw.githubusercontent.com/DevBubba/Slick/main/Assets/Img/Logo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
 }
