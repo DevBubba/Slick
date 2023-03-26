@@ -2397,7 +2397,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "V2.0 Made By - DevBubba#6642";
+  content: "V2.0 Made By - DevBubba";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
