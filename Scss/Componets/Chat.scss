@@ -1,0 +1,587 @@
+@use "../Core/Mixins" as m;
+
+[class^="channelTextArea"] {
+  border-radius: 8px;
+
+  [class*="scrollableContainer"] {
+    background: rgba(0, 0, 0, 0.1);
+
+    [class^="attachWrapper"] {
+      border-right-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  [class^="autocomplete"] {
+    background: transparent !important;
+  }
+  [class^="autocompleteInner"] {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: transparent !important;
+  }
+  [class*="autocompleteRow"] > [class*="selected"] {
+    background: var(--main-color-semitransparent-selected) !important;
+  }
+
+  & > [class^="container-"] > [class^="containerBackground"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-color: transparent;
+  }
+
+  [class*="inner"] [class^="buttons"] > button:first-child {
+    display: none !important;
+  }
+}
+
+[class*="floating"] {
+  & > section {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  &::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: var(--app-background) center / cover no-repeat fixed;
+    background-position: unset;
+  }
+}
+
+[class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+
+  [class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
+    background: var(--main-color) !important;
+  }
+  [class^="unicodeShortcut-"],
+  [class^="inspector-"] {
+    background: #000;
+  }
+}
+
+[class*="followButton"] {
+  @include m.btred_important;
+}
+
+[id^="chat-messages"] [class*="description"] {
+  [class*="colorBrand"] {
+    @include m.btAccept_important;
+  }
+  [class*="colorPrimary"] {
+    @include m.btTransparent_important;
+  }
+  [class*="coloRed"] {
+    @include m.btred_important;
+  }
+}
+
+[class*="chatContent"] form > div > [class^="wrapper"] {
+  background: rgba(0, 0, 0, 0.3);
+}
+[class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
+  @include m.btred_important;
+}
+
+[class*="reactions-"] [class*="reaction"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
+  background: rgba(0, 0, 0, 0.2) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  display: flex;
+  align-content: center;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  &[class*="reactionMe"] {
+    border-color: var(--main-color);
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+}
+[class*="reactionCount-"] {
+  color: var(--accent-color) !important;
+}
+
+[class^="layerContainer-"] [class^="layer-"] {
+  [class*="reactors-"] {
+    background: transparent !important;
+
+    div:not([class*="contents"]) {
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+  }
+
+  [class*="menu-"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: none !important;
+
+    [class*="wrapper-"] img {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+}
+
+[class*="messagesPopoutWrap"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^="uploadDropModal"] {
+  [class^="bgScale"] {
+    background: var(--profile-activity) !important;
+  }
+  [class*="icons"] {
+    filter: hue-rotate(110deg) contrast(1.3) !important;
+  }
+}
+
+[class^="uploadModal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+
+  [class^="footer"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+  label[class*="checked"] [class*="checkbox"] {
+    background: var(--main-color) !important;
+    border-color: transparent !important;
+
+    svg path {
+      fill: #fff !important;
+    }
+  }
+}
+
+[id^="message-content-Uploader"] > div[class*="attachment"] {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: #000000;
+
+  [class*="progressBar"] {
+    background: var(--accent-color) !important;
+  }
+}
+
+[id^="message-accessories"] > [class^="embedWrapper"] {
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
+}
+
+[class^="messageAttachment"] {
+  border-color: #000 !important;
+
+  & > [class^="attachment"],
+  & > [class^="embedWrapper"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  code {
+    background: transparent !important;
+  }
+  [class^="textContainer"] + div {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+[id^="message-content"] [class*="mention"] {
+  color: var(--accent-desaturated);
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+[class*="mentioned"] {
+  background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
+  [class*="mention"] {
+    color: var(--accent-saturated);
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &::before {
+    left: 1px;
+    border-radius: 5px 0 0 5px;
+    background: var(--accent-saturated);
+    border-left: 2px solid var(--accent-saturated);
+  }
+}
+
+[class*="message"] [class*="buttonContainer"] [class*="container"] [class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+[class*="recentMentionsPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="layer"] #emoji-picker-tab-panel[class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  [class*="emojiItem"] {
+    transition: transform 0.2s ease-in-out;
+  }
+  [class*="emojiItemSelected"] {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+}
+
+[class^="threadSidebar"] {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+[class*="layer"] [class*="browser"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="hasThread"] [class*="cta"] {
+  color: var(--accent-color) !important;
+}
+
+[class*="messagesWrapper"] [class*="content"] [class*="divider"] {
+  border-color: transparent;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  [class*="content"] {
+    color: var(--accent-saturated) !important;
+    width: 95%;
+    transform: translateY(6px);
+  }
+
+  &:not([class*="isUnread"]) > span {
+    color: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(204, 204, 204, 0.1) !important;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  [class*="isUnread"] {
+    background: transparent !important;
+    color: var(--accent-saturated) !important;
+    width: 95%;
+    transform: translateY(6px);
+  }
+}
+
+[class*="unreadPill"] {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--accent-saturated) !important;
+  padding: 12px 0px;
+  width: 100%;
+  font-size: 14px;
+}
+
+[class*="unreadPillCap"] {
+  visibility: hidden;
+}
+
+[id^="status-picker"] {
+  transition: background 200ms ease-out;
+}
+#status-picker {
+  &-online {
+    color: #43b581;
+    &[class*="focused"] {
+      background: #43b58244;
+    }
+  }
+
+  &-idle {
+    color: #faa61a;
+    &[class*="focused"] {
+      background: #faa81a42;
+    }
+  }
+
+  &-dnd {
+    color: #f04747;
+    &[class*="focused"] {
+      background: #b83a3c3d;
+    }
+  }
+
+  &-invisible {
+    color: #747f8d;
+    &[class*="focused"] {
+      background: #747f8d3d;
+    }
+  }
+
+  &-custom-status[class*="focused"] {
+    background: #ff4db53d;
+  }
+}
+
+[class^="newMessagesBar-"] {
+  background: var(--main-color) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+
+[class^="jumpToPresentBar-"] {
+  background: var(--accent-desaturated) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+
+[id^="message-accessories-"] > [class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.2);
+}
+[id^="message-accessories-"] > [class*="wrapper"] [class*="guildIconImage"] {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+[class*="title"] [class*="search"] {
+  order: 1;
+  margin-left: 4px;
+
+  [class*="search"]:not([class*="open"]) {
+    [class*="searchBar"] {
+      width: 27px;
+      transition: 250ms;
+      background: transparent;
+      border-bottom: 2px solid transparent;
+
+      [class*="iconContainer"] {
+        transform: scale(1.3);
+        transition: 250ms;
+
+        [class*="icon"] {
+          color: var(--interactive-normal);
+        }
+      }
+    }
+    &:hover [class*="searchBar"] {
+      width: 240px;
+      background: rgba(0, 0, 0, 0.15);
+
+      [class*="iconContainer"] {
+        transform: scale(1);
+
+        [class*="icon"] {
+          color: var(--text-muted);
+        }
+      }
+    }
+  }
+}
+
+[class*="DraftEditor"] {
+  [class*="searchFilter"],
+  [class*="searchAnswer"] {
+    background: var(--main-color);
+  }
+}
+
+[id*="popout"] > [class*="container"] {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: none !important;
+
+  [class*="resultsGroup"] {
+    text-align: center;
+
+    [class*="selected"],
+    [class*="option"]:hover {
+      background: var(--main-color-semitransparent-selected);
+    }
+
+    &::before,
+    [class*="option"]::after {
+      visibility: hidden !important;
+    }
+  }
+  [class*="queryContainer"] {
+    background: rgba(0, 0, 0, 9);
+
+    span {
+      background: var(--main-color);
+    }
+  }
+  [class*="searchLearnMore"] {
+    display: none;
+  }
+}
+
+[class*="datePicker"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+
+  [class*="hintValue"] {
+    margin-left: 5px;
+    @include m.btred_important;
+  }
+}
+
+[class*="react-datepicker"] {
+  background: transparent !important;
+
+  [class*="month"] > [class*="week"] {
+    [class*="day"]:not([class*="day--disabled"]) {
+      background: var(--main-color-semitransparent) !important;
+
+      &:hover {
+        background: var(--main-color-semitransparent-selected) !important;
+      }
+    }
+
+    [class*="selected"] {
+      background: var(--main-color-semitransparent-selected) !important;
+
+      &::after {
+        background: var(--main-color-semitransparent-selected) !important;
+      }
+    }
+
+    [class*="outside-month"]:not([class*="day--disabled"]) {
+      background: var(--main-color-semitransparent) !important;
+      opacity: 0.3 !important;
+    }
+  }
+}
+
+[class*="searchResultsWrap"] {
+  [class*="channelSeparator"] {
+    [class*="channelName"] {
+      background: transparent;
+      text-align: right !important;
+      border-radius: 8px;
+      padding: 5px !important;
+
+      &:hover {
+        background: var(--main-color-semitransparent-selected);
+        text-decoration: none;
+      }
+    }
+  }
+
+  [class*="searchHeader"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  [class*="searchResult"] {
+    &[class*="expanded"] {
+      border-color: transparent !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+      background: rgba(0, 0, 0, 0.1) !important;
+      opacity: 1;
+    }
+
+    [class*="searchResultMessage"] {
+      &[class*="after"],
+      &[class*="before"] {
+        opacity: 0.15 !important;
+      }
+    }
+  }
+}
+[class*="actionButtons"] [class*="jumpButton"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 3px !important;
+  color: var(--button-text) !important;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
+
+[class*="pageControlContainer"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  [class*="activeButton"] {
+    background: var(--main-color) !important;
+  }
+
+  [class*="roundButton"]:not([class*="activeButton"]):hover {
+    background: var(--main-color-semitransparent) !important;
+  }
+}
+
+[class*="backgroundFlash"] {
+  background: transparent !important;
+
+  li {
+    background: var(--accent-color-semitransparent) !important;
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+[class*="replyBar"] {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+
+  [class*="colorLink"] {
+    color: var(--button-text);
+  }
+}
+
+[class*="channelAttachmentArea"] > li {
+  background: rgba(0, 0, 0, 0.1) !important;
+
+  [class*="actionBar"] [class*="wrapper"] {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+code {
+  background: rgba(0, 0, 0, 0.2) !important;
+  .hljs-keyword {
+    color: var(--accent-desaturated) !important;
+  }
+  .hljs-title {
+    color: var(--accent-saturated) !important;
+  }
+  .hljs-literal {
+    color: var(--main-color-selected) !important;
+  }
+  .hljs-string {
+    color: var(--button-text) !important;
+  }
+  .hljs-attribute {
+    color: var(--accent-desaturated) !important;
+  }
+  .hljs-selector-class {
+    color: var(--accent-saturated) !important;
+  }
+  .hljs-number {
+    color: var(--main-color-selected) !important;
+  }
+  .hljs-selector-tag {
+    color: var(--accent-desaturated) !important;
+  }
+}
+
+[class*="replying"] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+
+  &::before {
+    left: 3px;
+    border-radius: 5px 0 0 5px;
+    background: var(--accent-saturated);
+    border-left: 2px solid var(--accent-saturated);
+  }
+}
+[class^="categoryFadeBlurple-"] {
+  background: var(--main-color) !important;
+}
+
+[class*="chat"] form {
+  margin: 0px;
+}
