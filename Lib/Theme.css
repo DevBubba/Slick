@@ -1562,7 +1562,7 @@ button[class*=participantsButton]:hover {
 }
 [class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName]::before {
   width: 10px;
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsclose.svg);
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/close.svg);
   background-size: 10px;
 }
 
@@ -1892,127 +1892,127 @@ button[class*=participantsButton]:hover {
 }
 
 [aria-controls=my-account-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsperson.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons//person.svg) !important;
 }
 
 [aria-controls=profile-customization-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsperson-box.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/person-box.svg) !important;
 }
 
 [aria-controls="privacy-&-safety-tab"]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconssecurity.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/security.svg) !important;
 }
 
 [aria-controls=authorized-apps-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsapps.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/apps.svg) !important;
 }
 
 [aria-controls=connections-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconslink.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/link.svg) !important;
 }
 
 [aria-controls=discord-nitro-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsnitro.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/nitro.svg) !important;
 }
 
 [aria-controls=nitro-server-boost-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsserver_boost.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/server_boost.svg) !important;
 }
 
 [aria-controls=subscriptions-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconscash.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/cash.svg) !important;
 }
 
 [aria-controls=library-inventory-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsgift.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/gift.svg) !important;
 }
 
 [aria-controls=billing-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/IconsCredit_card.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/Credit_card.svg) !important;
 }
 
 [aria-controls=appearance-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconslooks.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/looks.svg) !important;
 }
 
 [aria-controls=accessibility-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconshuman.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/human.svg) !important;
 }
 
 [aria-controls="voice-&-video-tab"]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsmic.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/mic.svg) !important;
 }
 
 [aria-controls="text-&-images-tab"]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconschat.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/chat.svg) !important;
 }
 
 [aria-controls=notifications-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsnotifications.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/notifications.svg) !important;
 }
 
 [aria-controls=keybinds-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconskeyboard.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/keyboard.svg) !important;
 }
 
 [aria-controls=language-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconslanguage.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/language.svg) !important;
 }
 
 [aria-controls=windows-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconswindows.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/windows.svg) !important;
 }
 
 [aria-controls=streamer-mode-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsvideocam.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/videocam.svg) !important;
 }
 
 [aria-controls=advanced-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsdots.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/dots.svg) !important;
 }
 
 [aria-controls=game-activity-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsgamepad.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/gamepad.svg) !important;
 }
 
 [aria-controls=overlay-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsdesktop_windows.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/desktop_windows.svg) !important;
 }
 
 .bd-settings-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsbetterdiscord.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/betterdiscord.svg) !important;
 }
 
 .bd-emotes-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsemote.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/emote.svg) !important;
 }
 
 .bd-updates-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconshistory.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/history.svg) !important;
 }
 
 .bd-customcss-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconscode.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/code.svg) !important;
 }
 
 .bd-plugins-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconspuzzle.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/puzzle.svg) !important;
 }
 
 .bd-themes-tab::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconspalette.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/palette.svg) !important;
 }
 
 [aria-controls=changelog-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconshistory.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/history.svg) !important;
 }
 
 [aria-controls=hypesquad-online-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconshypesquad.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/hypesquad.svg) !important;
 }
 
 [aria-controls=logout-tab]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsexit.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/exit.svg) !important;
 }
 
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) {
@@ -2324,7 +2324,7 @@ div[class^=notice] button:hover {
   display: none;
 }
 [class*=botTagRegular]::after {
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Iconsbot.svg) !important;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/bot.svg) !important;
   background-size: cover !important;
   content: "";
   position: absolute;
@@ -2411,6 +2411,6 @@ div[class^=notice] button:hover {
   height: 24px;
   margin-top: -5px;
   margin-left: 6px;
-  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/IconsLogo.png) center/cover no-repeat;
+  background: url(https://github.com/DevBubba/Slick/blob/main/Assets/Icons/Logo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
 }
