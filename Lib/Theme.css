@@ -2389,7 +2389,7 @@ div[class^=notice] button:hover {
   line-height: 14px;
 }
 [class*=wordmark]::before {
-  content: "Novum";
+  content: "Slick";
   margin-left: 2px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 15px;
