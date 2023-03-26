@@ -1,4 +1,4 @@
-@use "../core/mixins" as m;
+@use "../Core/Mixins" as m;
 
 button {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
