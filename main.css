@@ -30,7 +30,7 @@ Version | 2.0
 @import url('https://raw.githubusercontent.com/DevBubba/Slick/main/Fonts/Rajdhani.css');
 @import url('https://raw.githubusercontent.com/DevBubba/Slick/main/Lib/Theme.css');
 
-root {
+:root {
   --font-primary: 'Rajdhani';
   --app-background: url("https://i.imgur.com/zvJB4Ab.jpg");
   --main-color: #992727;
