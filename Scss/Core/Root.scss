@@ -1,0 +1,61 @@
+:root {
+  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
+  --main-color: #992727;
+  --main-color-selected: #aa2f2f;
+  --main-color-semitransparent: #d4393926;
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #fd9fa0;
+  --accent-color-semitransparent: #fca7a918;
+  --accent-saturated: #fd7a7c;
+  --accent-desaturated: #b47a7a;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
+  --profile-activity: #6d1515;
+  --scroll-thumb-color: #a54b4b;
+}
+
+body::after {
+  background-image: var(--app-background) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left top;
+  z-index: -90;
+}
+
+[class^="appMount-"],
+[class^="app-"],
+[class^="chat-"],
+[class^="bg-"] {
+  background: transparent !important;
+}
+
+#app-mount > [class^="typeMacOS"],
+#app-mount > [class^="typeWindows"] {
+  height: 18px;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4px;
+}
+
+[class^="chat-"] > [class^="content-"] > div {
+  background: transparent !important;
+}
+
+[class^="wrapper-"] {
+  border: none;
+}
+
+[class^="sidebar-"] > nav > div:first-child,
+[class^="base-"] > [class^="content-"] > div:nth-child(2) section[class*="container-"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
