@@ -1,0 +1,62 @@
+@use "../Core/Mixins" as m;
+
+.bd-error-modal,
+.bd-error-modal-footer {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: none !important;
+}
+
+.bd-tab-bar .bd-tab-item.selected {
+  background: var(--main-color);
+}
+
+.bd-addon-error {
+  background: transparent !important;
+}
+.bd-addon-error-icon {
+  background: var(--main-color);
+}
+
+.bd-settings-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.bd-toast:not([class*="success"]) {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bd-button:not(.bd-addon-button) {
+  @include m.btred;
+}
+
+.bd-switch-body {
+  background: var(--accent-color-semitransparent) !important;
+}
+
+.bd-switch-checked .bd-switch-body {
+  background: var(--main-color) !important;
+  path {
+    fill: var(--main-color);
+  }
+}
+
+.bd-addon-views > button {
+  background: transparent !important;
+}
+
+.bd-addon-views > button.selected {
+  background: var(--main-color-selected) !important;
+}
+
+.bd-addon-card {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bd-addon-button {
+  background: transparent !important;
+}
+
+.bd-controls > .bd-addon-button:last-of-type {
+  margin-left: 10px;
+}
