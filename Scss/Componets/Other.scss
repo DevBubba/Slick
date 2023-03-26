@@ -1,0 +1,258 @@
+@use "../Core/Mixins" as m;
+
+[id^="popout"] > div > {
+  [class^="container"],
+  [class^="popout"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+}
+
+[class^="noticeRegion"] > [class^="container"] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  box-shadow: none !important;
+}
+
+[role="dialog"] [class^="contentWrapper"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^="popoutContainer"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  button {
+    @include m.btred;
+  }
+}
+
+[class^="app-"] > [class*="fixClipping-"] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+[class*="noiseCancellationPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="keyboardShortcutsModal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^="quickswitcher"] {
+  height: 100% !important;
+  box-shadow: none !important;
+}
+[class^="quickswitcher"] input {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="focusLock"] [class*="root"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+
+  [class*="directionRow"],
+  [class*="body"],
+  [class*="topSection"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  [class*="avatar"] {
+    border: none;
+  }
+
+  [class*="message"] {
+    background: transparent !important;
+    border: none !important;
+  }
+}
+
+[class^="live-"][class*="textBadge"] {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;
+}
+
+div[class^="notice"] {
+  color: var(--button-text) !important;
+  background: var(--main-color-semitransparent);
+  button {
+    color: var(--button-text) !important;
+    background: var(--main-color-semitransparent) !important;
+
+    &:hover {
+      color: var(--button-text-selected) !important;
+      background: var(--main-color-semitransparent-selected) !important;
+    }
+  }
+}
+
+#guild-context-invite-people:not(:hover),
+#channel-context-invite-people:not(:hover),
+#guild-header-popout-invite-people:not(:hover) {
+  color: var(--accent-color);
+}
+
+[class^="flowerStar-"] > path {
+  fill: var(--accent-saturated) !important;
+}
+[class^="flowerStar-"] + [class^="child"] path {
+  fill: #ffffff !important;
+}
+
+[class^="akaBadge-"] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class*="homeIcon"] {
+  transform: rotate(-180deg);
+}
+
+[data-list-item-id="guildsnav___home"]:hover > div,
+[data-list-item-id="guildsnav___home"][class*="selected"] > div {
+  background: var(--main-color) !important;
+}
+
+[href='https://support.discord.com']
+{
+  display: none !important;
+}
+
+[class*="title"] > [class^="toolbar"] > [class*="icon"]:nth-child(2) {
+  display: none !important;
+}
+
+[class*="nameAndDecorators"] {
+
+  [class*="botTagRegular"] {
+    transform: translateY(-2px);
+  }
+}
+
+[class*="botTagRegular"] {
+  background: transparent !important;
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+
+  &:not([class*="WithNickname"]) {
+    top: 0px;
+    right: 0px;
+  }
+
+  &[class*="WithNickname"] {
+    position: absolute;
+    transform: translateY(-4px);
+  }
+
+  [class*="botText"] {
+    display: none;
+  }
+
+  &::after {
+    background: url(https://przemec.github.io/Novum/assets/icons/bot.svg) !important;
+    background-size: cover !important;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.8;
+  }
+
+  & > svg {
+    color: #fff;
+    transform: translate(18px, -5px);
+    z-index: 2;
+  }
+}
+
+[class*="card-"]:not([class*="justify"]) {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
+}
+[class*="card-"][class*="justify"] {
+  box-shadow: none;
+}
+
+[class*="mediaBarWrapper"] {
+  [class*="fakeEdges"] {
+    background: var(--main-color);
+
+    &::after,
+    &::before {
+      background: var(--main-color);
+    }
+  }
+
+  [class*="mediaBarProgress"] {
+    background: var(--main-color);
+
+    &::after,
+    &::before {
+      background: var(--main-color);
+    }
+
+    [class*="mediaBarGrabber"] {
+      background: var(--main-color);
+    }
+  }
+
+  [class*="bubble"] {
+    background: var(--main-color);
+  }
+}
+
+[class*="embedVideo"] {
+  [class*="playPausePop"] {
+    display: none !important;
+  }
+}
+
+[class*="streamPreviewWrapper"] [class*="streamPreview"] {
+  [class*="previewContainer"] {
+    background: transparent !important;
+    border: transparent;
+  }
+
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: transparent;
+}
+
+[class*="wordmark"] {
+  svg {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    height: 16px;
+    line-height: 14px;
+  }
+  &::before {
+    content: "Slick";
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-family: Whitney, "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  &::after {
+    content: "V2.0 Made By - DevBubba#6642";
+    margin-left: 8px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+[class*="socialLinks"]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 6px;
+  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
+  filter: contrast(0%) brightness(1.4);
+}
