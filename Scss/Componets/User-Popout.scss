@@ -1,0 +1,183 @@
+@use "../Core/Mixins" as m;
+
+[class^="userPopout"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  background-size: cover;
+
+  [class^="bodyInnerWrapper"],
+  [class^="footer"],
+  [class^="avatar"] {
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
+  [class^="body"][style] {
+    overflow: hidden !important;
+    padding: 0;
+    padding-right: 0 !important;
+  }
+
+  [class^="bodyInnerWrapper"] > [class*="divider"] {
+    display: none;
+  }
+
+  #permissions-popout,
+  h1:not([class*="nickname"], [class*="ellipsis"]),
+  [class*="rolesList"]:not([class*="member-perm"]),
+  [class*="memberSinceContainer"],
+  [class*="textarea"],
+  div[class*="customStatus"],
+  [class*="userInfoBody"][class*="markup"] {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  [class*="bodyTitle"] {
+    margin-top: 8px;
+    color: var(--header-secondary);
+  }
+
+  [class*="userInfoSection"] {
+    margin-top: 20px;
+  }
+
+  [class*="member-perms-title"] {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  textarea {
+    padding-left: 32px !important;
+    padding-right: 16px;
+  }
+
+  [class*="rolesList"] > [class*="role"] {
+    position: relative;
+    margin: 0 -12px 4px 0;
+    [class*="roleRemoveButton"] {
+      cursor: pointer;
+      position: unset;
+      width: 20px;
+      height: 10px;
+      svg {
+        opacity: 0;
+      }
+    }
+    [class*="roleCircle"] {
+      position: absolute;
+      width: calc(100% - 18px);
+      margin: 0;
+      border-radius: 4px;
+      z-index: 1;
+      opacity: 0.3;
+      transform: scaleY(1.5);
+      pointer-events: none;
+    }
+    [class*="roleName"] {
+      z-index: 2;
+      margin-left: 4px;
+      margin-right: 8px;
+      transform: translateX(-13px);
+      -webkit-transition: transform 0.15s ease-in-out;
+      transition: transform 0.15s ease-in-out;
+      overflow: visible;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 10px;
+        top: 50%;
+        left: 0px;
+        transform: translate(-12px, -50%);
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
+        pointer-events: none;
+      }
+    }
+    &:hover [class*="roleName"] {
+      transform: translateX(-8px);
+      &::before {
+        width: 10px;
+        background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
+        background-size: 10px;
+      }
+    }
+  }
+}
+
+[class*="profileBanner-"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="popoutBanner"]:not([class*="BannerPremium"])[style] {
+  background: transparent !important;
+}
+
+[class^="activityUserPopout-"] {
+  background: var(--profile-activity);
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  [class*="platformIcon"] {
+    right: 16px !important;
+  }
+
+  button {
+    @include m.btred_important;
+  }
+
+  [class^="bar-"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 21px;
+    z-index: 1;
+    width: 300px;
+    top: -20px;
+    left: 0;
+    background: var(--profile-activity);
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    animation: animate2 8s linear infinite;
+    animation-delay: 0s;
+    opacity: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 21px;
+    z-index: 1;
+    width: 300px;
+    bottom: -20px;
+    left: 0;
+    background: var(--profile-activity);
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    animation: animate2 8s linear infinite;
+    animation-delay: 0s;
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+  @keyframes animate2 {
+    0% {
+      -webkit-mask-position-x: 268px;
+    }
+
+    100% {
+      -webkit-mask-position-x: 0;
+    }
+  }
+}
+
+[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
+  background: var(--main-color) !important;
+}
