@@ -1,0 +1,28 @@
+[class*="content"] [class*="pageWrapper"] {
+  background: transparent !important;
+}
+[class*="selectedCategoryItem"] > div {
+  background: var(--main-color) !important;
+}
+
+[class*="searchPage"] > [class*="search"] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  [class*="searchBox"] {
+    background: transparent !important;
+  }
+}
+[class*="categoryPill"] {
+  & > div {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  &[class*="selected"] {
+    background: var(--main-color) !important;
+    & > div {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+  }
+}
+
+.bd-server-splash {
+  filter: none;
+}
