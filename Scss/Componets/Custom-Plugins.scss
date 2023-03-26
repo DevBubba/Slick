@@ -1,0 +1,26 @@
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+  div {
+    background: rgba(0, 0, 0, 0.9) !important;
+    div {
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+  }
+}
+
+.ChannelDms-channelpopout-popout {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  & > [role="button"] {
+    background-color: var(--main-color-semitransparent-selected) !important;
+  }
+
+  & > button {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-radius: 5px !important;
+  }
+}
+
+.ChannelDms-channelmembers-wrap > [class*="header"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
