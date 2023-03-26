@@ -1,0 +1,101 @@
+@use "../Core/Mixins.scss" as m;
+
+[class^="chat"] > [class*="minimum"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^="callContainer"] {
+  background: transparent !important;
+}
+
+[id^="popout"] [class^="popoutWrapper"] > [class^="scroller"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^="quickSelectPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+button[class*="participantsButton"] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--button-text) !important;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
+
+[class^="liveQualityIndicator"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: var(--button-text) !important;
+}
+[class^="liveIndicator"] > [class^="live"] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class^="tileChild-"] button > [class*="button-"] {
+  background: rgba(0, 0, 0, 0.95);
+  color: var(--button-text);
+  &:hover {
+    color: var(--button-text-selected);
+  }
+}
+
+[class^="pictureInPictureVideo-"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+[class^="pictureInPictureVideo-"] > span button > [class*="button-"] {
+  @include m.btred;
+}
+
+[class^="emptyPreview-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+[class^="wanderingCubesItem-"] {
+  background: var(--accent-color) !important;
+}
+[class^="tile-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
+}
+[class^="tileChild"] > [class*="videoWrapper"],
+[class^="tileChild"] > div:nth-child(2):not([class^="overlay"]) {
+  background: transparent !important;
+}
+
+[class*="tileSizer"] [class*="tile"] {
+  background: transparent !important;
+
+  button [class*="button"] {
+    @include m.btred;
+  }
+}
+
+[class^="videoControls"] {
+  [class*="contextMenuNub"],
+  button[class*="centerButton"] {
+    background: rgba(0, 0, 0, 0.6) !important;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+    & svg {
+      color: var(--button-text-selected) !important;
+    }
+  }
+  
+  button[class*="red"] {
+    transition: 0.2s all ease-in-out;
+    @include m.btred_important;
+  }
+
+  & > [class^="gradient"] {
+    background: transparent !important;
+  }
+
+  [class*="topControls"] [class*="headerWrapper"] [class*="transparent"][class*="container"] {
+    background: transparent !important;
+  }
+}
