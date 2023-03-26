@@ -1,0 +1,278 @@
+@use "../Core/Mixins" as m;
+
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+}
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
+  background: rgba(255, 153, 0, 0.3) !important;
+}
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+}
+
+[role="radiogroup"] {
+  & > [class*="item"] {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  & > [class*="item"]:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  & > [class*="item"][aria-checked="true"] {
+    background: rgba(0, 0, 0, 0.4);
+
+    [class*="radioBar"] div:not([class*="info"]) circle {
+      fill: rgb(255, 255, 255);
+    }
+  }
+}
+
+[class*="keybindGroup"] button {
+  @include m.btred_important;
+}
+[class*="removeKeybind"] {
+  background-color: var(--main-color-selected);
+}
+
+[class^="connectedAccounts"] > [class^="wrapper"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 5px;
+  transition: transform 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.8) !important;
+  }
+}
+[class^="connectionList"] > [class^="connection"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 10px;
+}
+
+[class^="slider-"] > [class^="track-"] > [class^="mark-"] {
+  [class^="markValue-"] {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  [class^="markDash-"] {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+}
+
+[class^="children-"] [class*="notDetected-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+[class^="children-"] [class*="nowPlaying-"] {
+  background: rgba(0, 255, 128, 0.2) !important;
+}
+[class^="addGamePopout-"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: none !important;
+}
+[id^="popout"] [class*="searchableSelect"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+
+[class^="lastPlayed-"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+[class^="overlayToggleIconOn-"] path {
+  fill: rgba(255, 255, 255, 0.5) !important;
+}
+[class^="overlayToggleIconOff-"] path,
+[class^="overlayToggleIconOff-"] rect {
+  fill: var(--main-color) !important;
+}
+
+[class*="removeGame"] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[class^="overlayStatusText-"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class*="notificationSettings"] {
+
+  label:not([class*="selected"], [class*="disabled"]) {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  label:not([class*="selected"], [class*="disabled"]):hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  label[class*="selected"]:not([class*="disabled"]) {
+    background: var(--main-color);
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  [class*="disabledSelected"] {
+    border-color: var(--main-color) !important;
+  }
+  label[class*="disabled"] path:last-child {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  label[class*="disabled"]:hover path:last-child {
+    fill: rgba(255, 255, 255, 0.7);
+  }
+  label[class*="selected"][class*="disabled"] path:last-child {
+    fill: var(--main-color) !important;
+  }
+}
+
+[class*="accountProfileCard"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+
+  [class*="fieldButton-"] {
+    @include m.btred_important;
+  }
+}
+
+[class*="profileBannerPreview"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="info-"] > * {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="item"] {
+
+  &[class*="bd"],
+  &[aria-controls] {
+    padding-left: 50px !important;
+  }
+
+
+  &:hover {
+    background: var(--main-color-semitransparent) !important;
+    color: var(--button-text) !important;
+  }
+  &[class*="selected"] {
+    background: var(--main-color-semitransparent-selected) !important;
+    color: var(--button-text-selected) !important;
+  }
+
+  &[aria-controls="discord-nitro-tab"] svg {
+    display: none;
+  }
+  [class*="selectedBackground"] {
+    background: transparent !important;
+  }
+}
+
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="item"]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-size: cover !important;
+}
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="selected"]::after {
+  opacity: 0.7;
+}
+
+[aria-controls="my-account-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/person.svg) !important;
+}
+[aria-controls="profile-customization-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/person-box.svg) !important;
+}
+[aria-controls="privacy-&-safety-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
+}
+[aria-controls="authorized-apps-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/apps.svg) !important;
+}
+[aria-controls="connections-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
+}
+
+[aria-controls="discord-nitro-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/nitro.svg) !important;
+}
+[aria-controls="nitro-server-boost-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/server_boost.svg) !important;
+}
+[aria-controls="subscriptions-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/cash.svg) !important;
+}
+[aria-controls="library-inventory-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/gift.svg) !important;
+}
+[aria-controls="billing-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/Credit_card.svg) !important;
+}
+
+[aria-controls="appearance-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/looks.svg) !important;
+}
+[aria-controls="accessibility-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/human.svg) !important;
+}
+[aria-controls="voice-&-video-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/mic.svg) !important;
+}
+
+[aria-controls="text-&-images-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/chat.svg) !important;
+}
+[aria-controls="notifications-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/notifications.svg) !important;
+}
+[aria-controls="keybinds-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/keyboard.svg) !important;
+}
+[aria-controls="language-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/language.svg) !important;
+}
+[aria-controls="windows-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/windows.svg) !important;
+}
+[aria-controls="streamer-mode-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/videocam.svg) !important;
+}
+[aria-controls="advanced-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/dots.svg) !important;
+}
+[aria-controls="game-activity-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/gamepad.svg) !important;
+}
+[aria-controls="overlay-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
+}
+
+.bd-settings-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/betterdiscord.svg) !important;
+}
+.bd-emotes-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
+}
+.bd-updates-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+}
+.bd-customcss-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/code.svg) !important;
+}
+.bd-plugins-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/puzzle.svg) !important;
+}
+.bd-themes-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/palette.svg) !important;
+}
+
+[aria-controls="changelog-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+}
+[aria-controls="hypesquad-online-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/hypesquad.svg) !important;
+}
+[aria-controls="logout-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/exit.svg) !important;
+}
