@@ -143,7 +143,7 @@
 }
 
 :root {
-  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
+  --app-background: url("https://github.com/DevBubba/Assets/Img/Background.png");
   --main-color: #992727;
   --main-color-selected: #aa2f2f;
   --main-color-semitransparent: #d4393926;
@@ -154,7 +154,7 @@
   --accent-desaturated: #b47a7a;
   --button-text: #dddddd;
   --button-text-selected: #ffffff;
-  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
+  --profile-background: url("https://github.com/DevBubba/Assets/Img/ProfileBackground.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
 }
@@ -1562,7 +1562,7 @@ button[class*=participantsButton]:hover {
 }
 [class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName]::before {
   width: 10px;
-  background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
+  background: url(https://github.com/DevBubba/Assets/Icons/close.svg);
   background-size: 10px;
 }
 
@@ -1892,127 +1892,127 @@ button[class*=participantsButton]:hover {
 }
 
 [aria-controls=my-account-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/person.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/person.svg) !important;
 }
 
 [aria-controls=profile-customization-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/person-box.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/person-box.svg) !important;
 }
 
 [aria-controls="privacy-&-safety-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/security.svg) !important;
 }
 
 [aria-controls=authorized-apps-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/apps.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/apps.svg) !important;
 }
 
 [aria-controls=connections-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/link.svg) !important;
 }
 
 [aria-controls=discord-nitro-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/nitro.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/nitro.svg) !important;
 }
 
 [aria-controls=nitro-server-boost-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/server_boost.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/server_boost.svg) !important;
 }
 
 [aria-controls=subscriptions-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/cash.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/cash.svg) !important;
 }
 
 [aria-controls=library-inventory-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/gift.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/gift.svg) !important;
 }
 
 [aria-controls=billing-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/Credit_card.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/Credit_card.svg) !important;
 }
 
 [aria-controls=appearance-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/looks.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/looks.svg) !important;
 }
 
 [aria-controls=accessibility-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/human.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/human.svg) !important;
 }
 
 [aria-controls="voice-&-video-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/mic.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/mic.svg) !important;
 }
 
 [aria-controls="text-&-images-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/chat.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/chat.svg) !important;
 }
 
 [aria-controls=notifications-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/notifications.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/notifications.svg) !important;
 }
 
 [aria-controls=keybinds-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/keyboard.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/keyboard.svg) !important;
 }
 
 [aria-controls=language-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/language.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/language.svg) !important;
 }
 
 [aria-controls=windows-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/windows.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/windows.svg) !important;
 }
 
 [aria-controls=streamer-mode-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/videocam.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/videocam.svg) !important;
 }
 
 [aria-controls=advanced-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/dots.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/dots.svg) !important;
 }
 
 [aria-controls=game-activity-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/gamepad.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/gamepad.svg) !important;
 }
 
 [aria-controls=overlay-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/desktop_windows.svg) !important;
 }
 
 .bd-settings-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/betterdiscord.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/betterdiscord.svg) !important;
 }
 
 .bd-emotes-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/emote.svg) !important;
 }
 
 .bd-updates-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/history.svg) !important;
 }
 
 .bd-customcss-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/code.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/code.svg) !important;
 }
 
 .bd-plugins-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/puzzle.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/puzzle.svg) !important;
 }
 
 .bd-themes-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/palette.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/palette.svg) !important;
 }
 
 [aria-controls=changelog-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/history.svg) !important;
 }
 
 [aria-controls=hypesquad-online-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/hypesquad.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/hypesquad.svg) !important;
 }
 
 [aria-controls=logout-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/exit.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/exit.svg) !important;
 }
 
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) {
@@ -2324,7 +2324,7 @@ div[class^=notice] button:hover {
   display: none;
 }
 [class*=botTagRegular]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/bot.svg) !important;
+  background: url(https://github.com/DevBubba/Assets/Icons/bot.svg) !important;
   background-size: cover !important;
   content: "";
   position: absolute;
@@ -2411,6 +2411,6 @@ div[class^=notice] button:hover {
   height: 24px;
   margin-top: -5px;
   margin-left: 6px;
-  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
+  background: url(https://https://github.com/DevBubba/Assets/Icons/Logo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
 }
