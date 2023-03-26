@@ -1,0 +1,69 @@
+@use "../Core/Mixins" as m;
+
+[class*="applicationStore"] {
+  background: transparent !important;
+  button {
+    @include m.btred_important;
+  }
+
+  [class^="marketingRefreshSectionTier"] {
+    background: transparent !important;
+  }
+
+  [class^="feature"] > li[class^="feature"] {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+[class^="perksModal-"] {
+  background: transparent !important;
+}
+
+[class^="progressBar"] > [class^="barBackground"] {
+  background: var(--main-color) !important;
+}
+
+[class^="tierMarkerGroup"] > [class*="tierMarkerBackground"] {
+  background: var(--main-color) !important;
+}
+[class^="tierMarkerGroup"] [class*="tierMarkerInProgress"] {
+  background: var(--main-color-selected) !important;
+}
+
+[class^="carousel"] [class^="tier-"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  [class*="tierHeader"] {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  [class*="tierHeaderLocked"] path {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  [class*="tierBody"] {
+    background: transparent !important;
+  }
+}
+
+[class^="perks"] > li[class^="perk"] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[class^="progress"] rect[class^="background"] {
+  fill: var(--scroll-thumb-color);
+}
+
+[class^="progress"] [class*="tierInProgress"] {
+  background: var(--scroll-thumb-color);
+}
+
+[class^="tiers"] > [class^="tier-"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  [class*="tierHeader"] {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  [class*="tierHeaderLocked"] path {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  [class*="tierBody"] {
+    background: transparent !important;
+  }
+}
